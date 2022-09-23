@@ -7,7 +7,7 @@ const userData = [
             create : [
                 {
                     Title : 'This is a story all about how',
-                    Body : 'a post',
+                    Body : 'This is a test post That I am adding content to so that when I style this on the page I have something more to work with,  thanks ',
                     created_at : new Date(),
                     updated_at : new Date()
                 }
@@ -27,7 +27,7 @@ const userData = [
             create : [
                 {
                     Title : 'My life got flipped turned upside down',
-                    Body : 'a post',
+                    Body : 'a second post about how I am going to make this app and I am typing things so that on the page I will have more content to style, thnaks',
                     created_at : new Date(),
                     updated_at : new Date()
                 }
