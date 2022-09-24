@@ -9,13 +9,13 @@ docker compose up
 ```
 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/api/posts](http://localhost:3000) with your browser to see the result.
 
 ## Routes list
-/api/posts - Get all posts - GET
-/api/postId/edit - edit post -post
-/api/postId - get info on single Post
-Expected body for new post 
+### /api/posts - Get all posts - GET
+### /api/postId/edit - edit post -post
+### /api/postId - get info on single Post
+Expected body for update post 
 ```bash
 {
             Title,
@@ -26,6 +26,11 @@ Expected body for new post
 }
 ```
 /api
+
+# to run the front end, 
+### cd into frontend
+### npm i or npm install
+### npm run serve
 
 
 ## Learn More
