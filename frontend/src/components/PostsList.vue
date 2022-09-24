@@ -18,7 +18,7 @@
   });
 </script>
 <template>
-    <div class="flex flex-col items-center w-3/4 h-60 border border-black rounded bg-gray-400 p-6" v-for="post in store.posts" :key="post.id">
+    <div class="flex flex-col items-center w-3/4 h-60 border border-black rounded bg-gray-400 p-6 gap-[10]" v-for="post in store.posts" :key="post.id">
         <div>
           Title : {{post.Title}}
         </div>

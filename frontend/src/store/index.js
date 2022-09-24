@@ -4,17 +4,12 @@ export const postsStore = defineStore('posts', {
   state: () => ({
      posts :[]
     }),
-    getters:{
-      
-    },
-
     actions:{
       getPosts(){
         try {
           fetch('/api/posts')
           .then(res => res.json())
           .then(arr => {
-            console.log(arr)
             this.posts = arr
           })
         }
@@ -23,14 +18,23 @@ export const postsStore = defineStore('posts', {
         }
       },
       updatePost(post){
+        const {id, Body, user_uuid, updated_at} = post
+        const [newTitle, newDate, newBody] = Object.values(Body)
+        console.log(Body)
         fetch(`/api/posts/${post.id}/edit`, {
           method : 'POST',
           headers : {
-            'Content-Type' : 'applications/json'
+            'Content-Type' : 'application/json'
           },
-            body : JSON.stringify(post)
-          
-        })
+            body : JSON.stringify({
+              id, 
+              Title : newTitle,
+              Body:newBody, 
+              user_uuid, 
+              created_at : new Date(newDate.split('-').join('/')), 
+              updated_at
+            })
+          })
       }
     }
 })
