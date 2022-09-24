@@ -24,7 +24,6 @@ Expected body for update post
             updated_at
 }
 ```
-/api
 
 # Run the front end, 
 ### cd into frontend
