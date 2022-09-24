@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
-
+# if you would like to just test the backend run the up command, and that should be all you need to do
 
 Clone this repo and run 
 ```bash
