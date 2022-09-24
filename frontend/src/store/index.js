@@ -21,6 +21,16 @@ export const postsStore = defineStore('posts', {
         catch(e){
           console.log(e)
         }
+      },
+      updatePost(post){
+        fetch(`/api/posts/${post.id}/edit`, {
+          method : 'POST',
+          headers : {
+            'Content-Type' : 'applications/json'
+          },
+            body : JSON.stringify(post)
+          
+        })
       }
     }
 })
