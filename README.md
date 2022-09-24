@@ -13,8 +13,8 @@ Open [http://localhost:3000/api/posts](http://localhost:3000) with your browser 
 
 ## Routes list
 ### /api/posts - Get all posts - GET
-### /api/postId/edit - edit post -post
-### /api/postId - get info on single Post
+### /api/postId/edit - edit post - POST
+### /api/postId - get info on single post -GET
 Expected body for update post 
 ```bash
 {
@@ -27,7 +27,7 @@ Expected body for update post
 ```
 /api
 
-# to run the front end, 
+# Run the front end, 
 ### cd into frontend
 ### npm i or npm install
 ### npm run serve
@@ -39,6 +39,8 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Tailwind docs](https://tailwindcss.com/) - CSS library
+- [FormKit Docs](https://formkit.com/) - Library used for form inputs
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
